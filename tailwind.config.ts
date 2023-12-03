@@ -11,7 +11,7 @@ export default {
     },
 
     fontFamily: {
-      main: ["Roboto", "sans-serif"],
+      main: ["League Spartan", "sans-serif"],
     },
     extend: {
       backgroundImage: {
