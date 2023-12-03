@@ -8,7 +8,7 @@ const ScanQR = () => {
     <div className="flex flex-col text-white mt-10 gap-8">
       <h1 className="text-3xl">Scan QR Code</h1>
       <p className="w-[25rem] text-xl font-light">
-        Scan the QR code located on top of the lucky beer cover
+        Scan the QR Code found on the body of Lucky Beer
       </p>
 
       <Form className="flex flex-col items-center">
@@ -20,7 +20,7 @@ const ScanQR = () => {
         <div className="flex mt-8">
           <Button text="Scan QR Code">
             <span>
-              <ChevronUpIcon  className="w-[1.5rem]" />
+              <ChevronUpIcon className="w-[1.5rem]" />
             </span>
           </Button>
         </div>
