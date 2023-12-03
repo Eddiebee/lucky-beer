@@ -9,7 +9,7 @@ const NavBar = ({ navItems }: { navItems: string[] }) => {
       <header>
         <Link to="/">
           <h1
-            className="text-lg transition-all"
+            className="text-2xl transition-all"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
