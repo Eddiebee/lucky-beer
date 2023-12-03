@@ -2,11 +2,24 @@ import { Form } from "@remix-run/react";
 import Button from "./Button";
 
 const ProductNo = () => {
+  // validate that the input corresponds to ABC123
+  const [productNo, setProductNo] = useState("");
+  const [isError, setIsError] = useState(false);
+  const navigate = useNavigate();
+
+  const validateProductNo = (productNo: string) => {
+    if (productNo.toLowerCase() === "abc123") {
+      navigate("/result");
+    } else {
+      setIsError(true);
+    }
+  };
+
   return (
     <div className="flex flex-col text-white mt-10 gap-8">
       <h1 className="text-3xl">Input Product No</h1>
       <p className="w-[25rem] text-xl font-light ">
-        Input the 6 digit product number located on the body of Lucky Beer
+        Input the 6 digits product no located under the cover of lucky beer
       </p>
       <Form>
         <div>
