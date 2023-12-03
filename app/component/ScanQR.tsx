@@ -11,7 +11,9 @@ const ScanQR = () => {
 
       <Form className="flex flex-col items-center">
         {/* QR code scanner */}
-        <div className="flex bg-[#D9D9D9] h-[10rem] w-[10rem]"></div>
+        <div className="flex bg-[#D9D9D9] h-[10rem] w-[10rem]">
+          <img src={qrcode} />
+        </div>
 
         <div className="flex mt-8">
           <Button text="Scan QR Code" />
