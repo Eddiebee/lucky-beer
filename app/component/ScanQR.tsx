@@ -1,9 +1,10 @@
-import { Form } from "@remix-run/react";
+import { Form, useNavigate } from "@remix-run/react";
 import Button from "./Button";
-import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import { ChevronUpIcon, QrCodeIcon } from "@heroicons/react/24/solid";
 import qrcode from "../../public/images/luckybeer-qr-code-0.png";
 
 const ScanQR = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col text-white mt-10 gap-8">
       <h1 className="text-3xl">Scan QR Code</h1>
@@ -11,20 +12,20 @@ const ScanQR = () => {
         Scan the QR Code found on the body of Lucky Beer
       </p>
 
-      <Form className="flex flex-col items-center">
+      <div className="flex flex-col items-center">
         {/* QR code scanner */}
         <div className="flex bg-[#D9D9D9] h-[10rem] w-[10rem]">
           <img src={qrcode} />
         </div>
 
         <div className="flex mt-8">
-          <Button text="Scan QR Code">
+          <Button text="Scan QR Code" onClick={() => navigate("/scan_app")}>
             <span>
-              <ChevronUpIcon className="w-[1.5rem]" />
+              <QrCodeIcon className="w-[1.5rem]" />
             </span>
           </Button>
         </div>
-      </Form>
+      </div>
     </div>
   );
 };
