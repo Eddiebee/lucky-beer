@@ -6,7 +6,7 @@ const ProductNo = () => {
     <div className="flex flex-col text-white mt-10 gap-8">
       <h1 className="text-3xl">Input Product No</h1>
       <p className="w-[25rem] text-xl font-light ">
-        Input the 6 digits product no located under the cover of lucky beer
+        Input the 6 digit product number located on the body of Lucky Beer
       </p>
       <Form>
         <div>
