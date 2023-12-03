@@ -1,21 +1,9 @@
 import { Form } from "@remix-run/react";
 import Button from "./Button";
+import { useState } from "react";
 
 const ProductNo = () => {
   return (
-  // validate that the input corresponds to ABC123
-  const [productNo, setProductNo] = useState("");
-  const [isError, setIsError] = useState(false);
-  const navigate = useNavigate();
-
-  const validateProductNo = (productNo: string) => {
-    if (productNo.toLowerCase() === "abc123") {
-      navigate("/result");
-    } else {
-      setIsError(true);
-    }
-  };
-
     <div className="flex flex-col text-white mt-10 gap-8">
       <h1 className="text-3xl">Input Product No</h1>
       <p className="w-[25rem] text-xl font-light ">
