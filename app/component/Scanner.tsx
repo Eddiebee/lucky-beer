@@ -15,6 +15,7 @@ const Scanner = () => {
           <QrScanner
             onDecode={(result) => setScanResult(result)}
             onError={(error) => setError(error?.message)}
+            scanDelay={100000}
           />
         </div>
 
