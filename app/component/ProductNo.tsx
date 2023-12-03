@@ -1,4 +1,4 @@
-import {  useNavigate } from "@remix-run/react";
+import { useNavigate } from "@remix-run/react";
 import Button from "./Button";
 import { useState } from "react";
 
@@ -34,7 +34,6 @@ const ProductNo = () => {
               required
               placeholder="xxxxxxx"
               type="text"
-              inputMode="numeric"
               className="p-1 w-[20rem] text-center outline-none tracking-wider bg-transparent border-yellow border-2 rounded-md mb-8"
             />
           </div>
