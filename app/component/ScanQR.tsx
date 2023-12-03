@@ -1,5 +1,7 @@
 import { Form } from "@remix-run/react";
 import Button from "./Button";
+import { ChevronUpIcon } from "@heroicons/react/24/solid";
+import qrcode from "../../public/images/luckybeer-qr-code-0.png";
 
 const ScanQR = () => {
   return (
