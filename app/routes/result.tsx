@@ -33,7 +33,7 @@ const Result = () => {
           {/* verification badge */}
           <div className="flex items-center text-white mb-3">
             <CheckBadgeIcon className="w-16" />
-            <p className="text-xl font-normal">Original</p>
+            <p className="text-xl font-normal">ORIGINAL</p>
           </div>
         </div>
       </div>
