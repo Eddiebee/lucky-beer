@@ -10,8 +10,8 @@ const Scanner = () => {
   return (
     <>
       <BackButton />
-      <div className="w-full absolute top-32 mt-10 ">
-        <div className="backdrop-opacity-10 backdrop-invert bg-yellow/20 p-5 w-full">
+      <div className="w-full absolute top-32 mt-10 md:flex md:justify-center ">
+        <div className="w-full md:w-[35rem] self-center p-5 backdrop-opacity-10 backdrop-invert bg-yellow/20">
           <QrScanner
             onDecode={(result) => setScanResult(result)}
             onError={(error) => setError(error?.message)}
