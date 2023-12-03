@@ -16,7 +16,11 @@ const ScanQR = () => {
         </div>
 
         <div className="flex mt-8">
-          <Button text="Scan QR Code" />
+          <Button text="Scan QR Code">
+            <span>
+              <ChevronUpIcon  className="w-[1.5rem]" />
+            </span>
+          </Button>
         </div>
       </Form>
     </div>
