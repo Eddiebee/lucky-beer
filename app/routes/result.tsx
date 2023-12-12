@@ -11,7 +11,7 @@ const RESULT = {
   composition: "Carbohydrate - 90% Alcohol - 8% Protein - 1.8% Fats - 0.2%",
   shipping:
     "500 cases to distributor alpha (8/5/22, van 111 at -1C) 500 cases to distributor Beta (8/5/22, van 112 at -1C)",
-  retailerData:
+  "retailer data":
     "200 Bottles scanned at liquormart 1180 bottles scanned at bottle shop 2",
 };
 
@@ -21,7 +21,10 @@ export type TResult = {
   ingredients: string;
   composition: string;
   shipping: string;
-  retailerData: string;
+  "retailer data": string;
+  "lab tests"?: string;
+  "brewing parameters"?: string;
+  packaging?: string;
 };
 
 const RESULTERMS = Object.keys(RESULT);

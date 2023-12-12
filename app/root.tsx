@@ -37,7 +37,7 @@ export default function App() {
       </head>
       <body className="font-main bg-hero-pattern bg-cover">
         {/* gradient overlay for body background */}
-        <div className="min-h-[150vh] bg-gradient-to-b from-gradientO to-gradient1"></div>
+        <div className="min-h-[160vh] bg-gradient-to-b from-gradientO to-gradient1"></div>
         <NavBar navItems={NAVITEMS} />
         {/* go back icon */}
         <Outlet />
